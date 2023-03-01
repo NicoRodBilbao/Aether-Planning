@@ -19,8 +19,28 @@
       <days/>
     </calendar>
   </calendars>
-  <tasks/>
+  <tasks>
+    <task id="1" name="Project planning" note="" work="201600" start="20230301T000000Z" end="20230307T170000Z" work-start="20230301T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+    <task id="2" name="Project design" note="" work="115200" start="20230307T000000Z" end="20230308T170000Z" work-start="20230307T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <task id="3" name="Use case diagram design" note="" work="57600" start="20230307T000000Z" end="20230308T170000Z" work-start="20230307T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <constraint type="must-start-on" time="20230307T000000Z"/>
+      </task>
+      <task id="4" name="Class diagram design" note="" work="57600" start="20230308T000000Z" end="20230308T170000Z" work-start="20230308T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <constraint type="must-start-on" time="20230308T000000Z"/>
+      </task>
+    </task>
+  </tasks>
   <resource-groups/>
-  <resources/>
-  <allocations/>
+  <resources>
+    <resource id="1" name="Unai Zuluaga" short-name="Zulu" type="1" units="0" email="zuluagaunai@gmail.com" note="" std-rate="15"/>
+    <resource id="2" name="Unai Bonilla" short-name="Bonllo" type="1" units="0" email="unaibh@gmail.com" note="" std-rate="15"/>
+    <resource id="3" name="Nicol&#xE1;s Rodr&#xED;guez" short-name="Nico" type="1" units="0" email="2002nikoniko2002@gmail.com" note="" std-rate="15"/>
+  </resources>
+  <allocations>
+    <allocation task-id="4" resource-id="1" units="100"/>
+    <allocation task-id="1" resource-id="1" units="70"/>
+    <allocation task-id="4" resource-id="2" units="100"/>
+    <allocation task-id="1" resource-id="2" units="70"/>
+    <allocation task-id="3" resource-id="3" units="100"/>
+  </allocations>
 </project>
