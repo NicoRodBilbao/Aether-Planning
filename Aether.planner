@@ -20,8 +20,8 @@
     </calendar>
   </calendars>
   <tasks>
-    <task id="1" name="Analysis" note="" work="201600" start="20230301T000000Z" end="20230307T170000Z" work-start="20230301T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
-    <task id="2" name="Planning" note="" work="172800" start="20230301T000000Z" end="20230308T170000Z" work-start="20230301T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+    <task id="1" name="Project planning" note="" work="201600" start="20230301T000000Z" end="20230307T170000Z" work-start="20230301T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+    <task id="2" name="Project design" note="" work="115200" start="20230307T000000Z" end="20230308T170000Z" work-start="20230307T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
       <task id="3" name="Use case diagram design" note="" work="57600" start="20230307T000000Z" end="20230308T170000Z" work-start="20230307T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
         <constraint type="must-start-on" time="20230307T000000Z"/>
       </task>
@@ -51,11 +51,24 @@
       <task id="22" name="Project packaging and delivery" note="" work="28800" start="20230301T000000Z" end="20230301T170000Z" work-start="20230301T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
     </task>
   </tasks>
-  <resource-groups/>
+  <resource-groups>
+    <group id="1" name="Web Programmer" admin-name="" admin-phone="" admin-email=""/>
+    <group id="2" name="iOS Programmer" admin-name="" admin-phone="" admin-email=""/>
+    <group id="3" name="Android Programmer" admin-name="" admin-phone="" admin-email=""/>
+    <group id="4" name="Main Programmer" admin-name="" admin-phone="" admin-email=""/>
+    <group id="5" name="Designer" admin-name="" admin-phone="" admin-email=""/>
+    <group id="6" name="Analist" admin-name="" admin-phone="" admin-email=""/>
+    <group id="7" name="Senior Programmer" admin-name="" admin-phone="" admin-email=""/>
+    <group id="8" name="Junior Programmer" admin-name="" admin-phone="" admin-email=""/>
+  </resource-groups>
   <resources>
-    <resource id="1" name="Unai Zuluaga" short-name="Zulu" type="1" units="0" email="zuluagaunai@gmail.com" note="" std-rate="15"/>
-    <resource id="2" name="Unai Bonilla" short-name="Bonllo" type="1" units="0" email="unaibh@gmail.com" note="" std-rate="15"/>
-    <resource id="3" name="Nicol&#xE1;s Rodr&#xED;guez" short-name="Nico" type="1" units="0" email="2002nikoniko2002@gmail.com" note="" std-rate="15"/>
+    <resource group="8" id="1" name="Unai Zuluaga" short-name="Zulu" type="1" units="0" email="zuluagaunai@gmail.com" note="" std-rate="15"/>
+    <resource group="7" id="2" name="Unai Bonilla" short-name="Bonllo" type="1" units="0" email="unaibh@gmail.com" note="" std-rate="20"/>
+    <resource group="6" id="3" name="Nicol&#xE1;s Rodr&#xED;guez" short-name="Nico" type="1" units="0" email="2002nikoniko2002@gmail.com" note="" std-rate="15"/>
+    <resource group="5" id="4" name="Leire Carrasco" short-name="Leire" type="1" units="0" email="leirecarrasco@gmail.com" note="" std-rate="10"/>
+    <resource group="1" id="5" name="Iker Saiz" short-name="Iker" type="1" units="0" email="ikersaiz@gmail.com" note="" std-rate="15"/>
+    <resource group="4" id="6" name="Jeanpierr" short-name="JP" type="1" units="0" email="jp@gmail.com" note="" std-rate="30"/>
+    <resource id="7" name="a" short-name="" type="1" units="0" email="" note="" std-rate="0"/>
   </resources>
   <allocations>
     <allocation task-id="4" resource-id="1" units="100"/>
